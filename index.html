@@ -8,16 +8,15 @@
     />
     <meta name="keywords" content="youtube, background, lights" />
 
-    <title>Youtube Background Picker</title>
+    <title>Visuals Picker</title>
 
     <!-- external CSS link -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="background"></div>
-    <h1>Youtube Background Picker</h1>
-    <img src="img/chair.png" alt="generic youtube gaming chair" />
+    <div class="background" style="animation-play-state: paused"></div>
+    <h1>Visuals Picker</h1>
 
     <h2>Remote</h2>
     <ul>
@@ -26,6 +25,27 @@
       <li id="blue"></li>
       <li id="yellow"></li>
     </ul>
+
+    <span id="bpm-switch">Toggle BPM Animation</span>
+
+    <span id="bpm-value"></span>
+
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="1"
+        max="200"
+        value="100"
+        class="slider"
+        id="bpm-range"
+      />
+    </div>
+
+    <div class="beat-btn-container">
+      <span id="beat-small">Small</span>
+      <span id="beat-medium">Medium</span>
+      <span id="beat-large">Large</span>
+    </div>
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>
