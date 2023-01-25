@@ -43,7 +43,7 @@ function partyBlue() {
   document.querySelector(".background").style.backgroundSize = "cover";
 
   //   document.querySelector("body").style.backgroundColor = "rgba(0,254,255)";
-  document.querySelector("body").style.color = "white";
+  document.querySelector("body").style.color = "black";
 }
 
 function partyYellow() {

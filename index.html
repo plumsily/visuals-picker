@@ -16,35 +16,40 @@
   </head>
   <body>
     <div class="background" style="animation-play-state: paused"></div>
-    <h1>Visuals Picker</h1>
+    <header>
+      <h1>Visuals Picker</h1>
 
-    <h2>Remote</h2>
-    <ul>
-      <li id="purple"></li>
-      <li id="green"></li>
-      <li id="blue"></li>
-      <li id="yellow"></li>
-    </ul>
+      <div>
+        <h2>Remote</h2>
+        <ul>
+          <li id="purple"></li>
+          <li id="green"></li>
+          <li id="blue"></li>
+          <li id="yellow"></li>
+        </ul>
+      </div>
+    </header>
 
-    <span id="bpm-switch">Toggle BPM Animation</span>
+    <div class="bpm-container">
+      <span>BPM: <span id="bpm-value"></span></span>
 
-    <span id="bpm-value"></span>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="200"
+          value="100"
+          class="slider"
+          id="bpm-range"
+        />
+      </div>
 
-    <div class="slidecontainer">
-      <input
-        type="range"
-        min="1"
-        max="200"
-        value="100"
-        class="slider"
-        id="bpm-range"
-      />
-    </div>
-
-    <div class="beat-btn-container">
-      <span id="beat-small">Small</span>
-      <span id="beat-medium">Medium</span>
-      <span id="beat-large">Large</span>
+      <div class="beat-btn-container">
+        <span id="bpm-switch">Toggle BPM Animation</span>
+        <span id="beat-small">Small</span>
+        <span id="beat-medium">Medium</span>
+        <span id="beat-large">Large</span>
+      </div>
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>

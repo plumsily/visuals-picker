@@ -33,12 +33,12 @@ li {
   height: 65px;
 }
 body {
+  font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100vw;
-  height: 100vh; */
+  height: 100vh;
 }
 /******************************************
 /* ADDITIONAL STYLES
@@ -55,6 +55,32 @@ body {
 #yellow {
   background: rgb(255, 254, 0);
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ul {
+  display: flex;
+}
+.bpm-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 .slidecontainer {
   display: flex;
@@ -65,7 +91,7 @@ body {
 .slider {
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
-  width: 90%; /* Full-width */
+  width: 100%; /* Full-width */
   height: 25px; /* Specified height */
   background: rgba(209, 209, 209, 0.5); /* Grey background */
   outline: none; /* Remove outline */
@@ -99,8 +125,12 @@ body {
 #bpm-switch {
   padding: 1rem 3rem;
   width: fit-content;
-  border: 1px solid red;
+  border: 1px solid black;
   cursor: pointer;
+}
+#bpm-value {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .background {
@@ -127,7 +157,7 @@ body {
 .beat-btn-container span {
   padding: 1rem 3rem;
   width: fit-content;
-  border: 1px solid red;
+  border: 1px solid black;
   cursor: pointer;
 }
 @keyframes beatSm {
